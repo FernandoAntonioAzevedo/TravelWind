@@ -1,9 +1,17 @@
 /*=============== GOOGLE FONTS ===============*/
-
+@import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700;900&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
 
+:root {
 /*========== Colors ==========*/
+--hue: 12;
+--first-color: hsl(var(--hue), 100%, 25%);
+--title-color: hsl(var(--hue), 4%, 26%);
+--text-color: hsl(var(--hue), 4%, 38%);
+--body-color: hsl(var(--hue), 4%, 99%);
+--border-color: hsl(var(--hue), 36%, 72%);
+--white-color: hsl(var(--hue), 4%, 100%);
 
 /*========== Font family ==========*/
 
@@ -11,6 +19,7 @@
 
 /*========== Font weight ==========*/
 
+}
 
 /* Responsive typography */
 

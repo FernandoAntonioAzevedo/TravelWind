@@ -14,14 +14,76 @@
 --white-color: hsl(var(--hue), 4%, 100%);
 
 /*========== Font family ==========*/
+--body-font: "Zen Old Mincho", serif;
+
 
 /*========== Font sizes ==========*/
+--big-font-size: 3.75rem;
+--h1-font-size: 3.5rem;
+--h2-font-size: 1.75rem;
+--h3-font-size: 1.5rem;
+--larger-font-size: 1.25rem;
+--large-size: 1.25rem;
+--normal-font-size: 1rem;
+--small-font-size: 0.875rem;
 
 /*========== Font weight ==========*/
+--weight-700: 700;
+--weight-900: 900;
 
 }
 
 /* Responsive typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+input,
+button,
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);    
+} 
+
+body {
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--title-color);
+    font-weight: var(--weight-900);
+    line-height: 1.2;
+}
+
+p {
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
 
 
 /*=============== BASE ===============*/

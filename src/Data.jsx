@@ -26,7 +26,7 @@ import gallery4 from './assets/img/gallery-4.png';
 import gallery5 from './assets/img/gallery-5.png';
 import gallery6 from './assets/img/gallery-6.png';
 
-export const links = ['home', 'about', 'destinations', 'tours'];
+export const links = ['Início', 'Sobre nós', 'Destinos', 'Passeios'];
 
 export const categories = [
   {

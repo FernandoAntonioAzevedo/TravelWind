@@ -28,6 +28,7 @@
 --small-font-size: 0.875rem;
 
 /*========== Font weight ==========*/
+--weight-400: 400;
 --weight-700: 700;
 --weight-900: 900;
 
@@ -44,8 +45,8 @@ input,
 button,
 body {
     font-family: var(--body-font);
-    font-size: var(--normal-font-size);    
-} 
+    font-size: var(--normal-font-size); 
+    
 
 body {
     background-color: var(--body-color);
@@ -90,9 +91,31 @@ img {
 
 
 /*=============== REUSABLE CSS CLASSES ===============*/
+.button {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    border: 2px solid var(--first-color);
+    background-color: var(--first-color);
+    padding: 0.25rem 1rem;
+    border-radius: 2rem;
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-weight: var(--weight-400);
+    transition: background 0.3s, color 0.3s;
+}
 
+.button:hover {
+    background-color: transparent;
+    color: var(--first-color);
+}
 
 /*=============== LAYOUT ===============*/
+.container {
+    max-width: 1240px;
+    margin-inline: auto;
+    padding-inline: 1.25rem;
+}
 
 
 

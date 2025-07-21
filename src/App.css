@@ -45,7 +45,8 @@ input,
 button,
 body {
     font-family: var(--body-font);
-    font-size: var(--normal-font-size); 
+    font-size: var(--normal-font-size);
+}     
     
 
 body {
@@ -116,11 +117,3 @@ img {
     margin-inline: auto;
     padding-inline: 1.25rem;
 }
-
-
-
-
-
-
-
-

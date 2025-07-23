@@ -3,6 +3,8 @@ import SectionTitle from "../title/SectionTitle";
 import ScrollLink from "../links/ScrollLink";
 import { RiTelegram2Line } from "react-icons/ri";
 
+import "./about.css";
+
 const About = () => {
   return (
     <section className="about section">
@@ -11,8 +13,8 @@ const About = () => {
 
         <div className="about-content">
           <SectionTitle
-            subtitle="Nós somos a Travel Wind " 
-            title="Sobre Nós"  
+            subtitle="Nós somos a Travel Wind" 
+            title="Explorando o Mundo, um destino de cada vez conosco."  
             description="Exploring the World, one destination at a Time with us" 
           />
 

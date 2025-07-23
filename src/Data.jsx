@@ -31,32 +31,32 @@ export const links = ['Início', 'Sobre nós', 'Destinos', 'Passeios'];
 export const categories = [
   {
     img: category1,
-    title: 'Beach',
+    title: 'Praias',
   },
 
   {
     img: category2,
-    title: 'Mountain',
+    title: 'Montanhas',
   },
 
   {
     img: category3,
-    title: 'Desert',
+    title: 'Desertos',
   },
 
   {
     img: category4,
-    title: 'Temple',
+    title: 'Templos',
   },
 
   {
     img: category5,
-    title: 'Cities',
+    title: 'Cidades',
   },
 
   {
     img: category6,
-    title: 'Pyramid',
+    title: 'Pirâmides',
   },
 ];
 

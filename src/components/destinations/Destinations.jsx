@@ -11,7 +11,7 @@ const Destinations = () => {
       <SectionTitle
             subtitle="Os melhores destinos" 
             title="Lugares lendários"  
-            description="Exploring the World, one destination at a Time with us" 
+            description="Explorando o Mundo, um destino de cada vez conosco." 
           />
 
           <div className="destinations-container">

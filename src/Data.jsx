@@ -72,7 +72,7 @@ export const destinations = [
   {
     id: 2,
     img: destination2,
-    title: 'Spain',
+    title: 'Espanha',
     price: 249,
     rating: 3.5,
   },
@@ -80,7 +80,7 @@ export const destinations = [
   {
     id: 3,
     img: destination3,
-    title: 'Japan',
+    title: 'Japão',
     price: 489,
     rating: 3.5,
   },
@@ -88,7 +88,7 @@ export const destinations = [
   {
     id: 4,
     img: destination4,
-    title: 'France',
+    title: 'França',
     price: 389,
     rating: 3.5,
   },
@@ -96,7 +96,7 @@ export const destinations = [
   {
     id: 5,
     img: destination5,
-    title: 'England',
+    title: 'Inglaterra',
     price: 239,
     rating: 3.5,
   },
@@ -104,7 +104,7 @@ export const destinations = [
   {
     id: 6,
     img: destination6,
-    title: 'New York',
+    title: 'Nova Iorque',
     price: 449,
     rating: 3.5,
   },

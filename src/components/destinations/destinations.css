@@ -1,0 +1,25 @@
+.destinations .section-header {
+    text-align: center;
+    margin-inline: auto;
+}
+
+.destinations-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.15rem;
+}
+
+.destination-item {
+    position: relative;    
+}
+
+.destination-details {
+    position: absolute;
+    inset: 0;
+    background-color: var(--hsla);
+    padding-block: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

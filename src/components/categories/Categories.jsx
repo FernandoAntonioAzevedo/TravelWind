@@ -2,11 +2,12 @@ import SectionTitle from "../title/SectionTitle";
 import { RiArrowLeftCircleLine, RiArrowRightCircleLine } from "react-icons/ri";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import { categories } from "../../Data";
 
 import "swiper/css";
 import "swiper/css/navigation";
+
 import "./categories.css"
-import { categories } from "../../Data";
  
 const Categories = () => {
   return (

@@ -87,7 +87,7 @@ const Tours = () => {
 
                   <ScrollLink 
                     to="/" 
-                    name="Mais detalhes" 
+                    name="Detalhes" 
                     className="button" 
                   >
                     <RiTelegram2Line className="button-icon" />

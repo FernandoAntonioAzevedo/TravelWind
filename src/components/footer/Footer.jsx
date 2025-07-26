@@ -78,17 +78,19 @@ const Footer = () => {
 
         <div>
           <h3 className="footer-title">Galeria</h3>
-
-          {footerGallery.map((footerGallery, index) => {
-            return (
-              <img 
-                src={footerGallery} 
-                alt="" 
-                className="footer-img"
-                key={index} 
-              />
-            );
-          })}  
+          
+          <div className="footer-gallery grid">
+              {footerGallery.map((footerGallery, index) => {
+              return (
+                <img 
+                  src={footerGallery} 
+                  alt="" 
+                  className="footer-img"
+                  key={index} 
+                />
+              );
+            })}  
+          </div>
         </div>
       </div>
     </footer>

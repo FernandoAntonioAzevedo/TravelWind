@@ -21,6 +21,13 @@
     box-shadow: 0 4px 16px hsla(var(--hue), 90%, 8%, 0.1);
 }
 
+.nav-logo,
+.nav-link, 
+.nav-toggle,
+.nav-close {
+    cursor: pointer;
+}
+
 .nav-list {
     column-gap: 2.2rem;
 }
@@ -36,7 +43,8 @@
     color: color 0.3s;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.active {
     color: var(--first-color);
 }
 

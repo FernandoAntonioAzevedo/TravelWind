@@ -7,11 +7,11 @@ import "./about.css";
 
 const About = () => {
   return (
-    <section className="about section">
+    <section className="about-section">
       <div className="about-container container grid">
         <img src={aboutImg} alt="" className="about-img" />
 
-        <div className="about-content">
+        <div className="about content">
           <SectionTitle
             subtitle="Nós somos a Travel Wind" 
             title="Explorando o Mundo, um destino de cada vez conosco."  

@@ -104,6 +104,7 @@ img {
     color: var(--white-color);
     text-transform: uppercase;
     font-weight: var(--weight-400);
+    cursor: pointer;
     transition: background 0.3s, color 0.3s;
 }
 

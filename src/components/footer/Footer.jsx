@@ -4,17 +4,24 @@ import { links } from "../../Data";
 import { FaMapMarkerAlt,FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import ScrollLink from "../links/ScrollLink";
 import { footerGallery } from "../../Data";
+import { Link } from "react-scroll";
+import { animateScroll } from "react-scroll";
+
 
 import "./footer.css";
 
 const Footer = () => {
+  const scrollTop = () => {
+    animateScroll.scrollToTop();
+  };
+  
   return (
     <footer className="footer">
       <div className="footer-container container grid">
         <div>
-          <a href="/" className="footer-logo">
+          <Link to="/" className="footer-logo" onClick={scrollTop}>
             <img src={Logo} alt="" className="footer-logo-img" />
-          </a>
+          </Link>
 
           <p className="footer-description">
             Explorando o Mundo, um destino de cada vez conosco.

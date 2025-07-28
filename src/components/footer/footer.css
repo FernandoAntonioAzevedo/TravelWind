@@ -8,6 +8,11 @@
     justify-content: space-between;
 }
 
+.footer-logo,
+.footer-link {
+    cursor: pointer;
+}
+
 .footer-description,
 .footer-title,
 .footer-link,

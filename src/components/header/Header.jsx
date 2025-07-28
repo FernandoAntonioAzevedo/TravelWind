@@ -3,23 +3,33 @@ import { links } from "../../Data";
 import ScrollLink from "../links/ScrollLink";
 import { RiCloseFill, RiTelegram2Line, RiMenuFill } from "react-icons/ri";
 import { Link } from "react-scroll";
+import { animateScroll } from "react-scroll";
 
 import "./header.css";
 
 const Header = () => {
+  const scrollTop = () => {
+    animateScroll.scrollToTop();
+  };
+
   return (
     <header className="header">
       <nav className="nav container">
-        <a href="/" className="nav-logo">
+        <Link to="/" className="nav-logo" onClick={scrollTop}>
           <img src={Logo} alt="" className="nav-logo-img" />
-        </a>
+        </Link>
 
         <div className="nav-menu">
           <ul className="nav-list">
             {links.map((link, index) => {
               return(
                 <li className="nav-item" key={index}>
-                  <ScrollLink to={link} name={link} className="nav-link" />
+                  <ScrollLink 
+                    to={link} 
+                    name={link} 
+                    extraPops={{ spy: true }}
+                    className="nav-link" 
+                  />
                 </li>
               );
             })}
@@ -31,7 +41,8 @@ const Header = () => {
         <div className="nav-buttons">
           <ScrollLink 
             to="booking" 
-            name="Agendar agora" 
+            name="Agendar agora"
+            extraPops={{ offset: -50 }} 
             className="button nav-button" 
           >
             <RiTelegram2Line className="button-icon" />

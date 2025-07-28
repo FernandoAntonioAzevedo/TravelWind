@@ -48,6 +48,10 @@
     color: var(--first-color);
 }
 
+.nav-link-button {
+    display: 
+}
+
 .nav-toggle,
 .nav-close {
     font-size: 1.5rem;

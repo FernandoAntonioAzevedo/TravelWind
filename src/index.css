@@ -1,13 +1,76 @@
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
-@media screen and (max-width: 1147px) {
+@media screen and (max-width: 1113px) {
     .container {
         max-width: 968px;
+    }
+
+    .button {
+        padding: 0.125rem 0.75rem;
+        font-size: 0.875rem;
+    }
+
+    .destionations-container {
+        gap: 0.75rem;
+    }
+
+    .tour-details {
+        padding: 0.75rem;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(3, max-content);
+        row-gap: 3.25rem;
     }
 }
 
 /* For medium devices */
-@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 1024px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .nav {
+        height: 3.25rem;
+    }
+
+    .nav-toggle,
+    .nav-close
+    .nav-link-button {
+        display: inline-flex;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: hsla(var(--hue), 0%, 100%, 0.4);
+        backdrop-filter: blur(16px);
+        border-left: 2px solid var(--border-color);
+        width: 50%;
+        height: 100%;
+        padding: 5rem 0 0 3rem;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    .nav-link {
+        font-weight: var(--weight-700);
+    }
+
+    .nav-close {
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+    }
+}
 
 @media screen and (max-width: 768px) {}
 

@@ -33,6 +33,17 @@ const Header = () => {
                 </li>
               );
             })}
+
+            <li className="nav-item" >
+                  <ScrollLink 
+                    to="booking" 
+                    name="Agendar agora"
+                    extraPops={{ offset: -50 }} 
+                    className="button nav-link-button" 
+                  >
+                    <RiTelegram2Line className="button-icon" />
+                  </ScrollLink>
+                </li>
           </ul>
 
           <RiCloseFill className="nav-close" />

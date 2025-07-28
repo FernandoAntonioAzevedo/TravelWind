@@ -2,6 +2,7 @@ import Logo from "../../assets/img/logo.png.png";
 import { links } from "../../Data";
 import ScrollLink from "../links/ScrollLink";
 import { RiCloseFill, RiTelegram2Line, RiMenuFill } from "react-icons/ri";
+import { Link } from "react-scroll";
 
 import "./header.css";
 

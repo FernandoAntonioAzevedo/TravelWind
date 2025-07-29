@@ -21,6 +21,11 @@
     box-shadow: 0 4px 16px hsla(var(--hue), 90%, 8%, 0.1);
 }
 
+.nav-logo {
+    width: 130px;
+    margin-top: 0.2rem;
+}
+
 .nav-logo,
 .nav-link, 
 .nav-toggle,
@@ -49,7 +54,7 @@
 }
 
 .nav-link-button {
-    display: 
+    display: none;
 }
 
 .nav-toggle,

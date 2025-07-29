@@ -45,9 +45,9 @@ const Categories = () => {
             slidesPerView: 2,            
           },
           1024: {
-            slidesPerView: 5,            
+            slidesPerView: 3,            
           },
-          1208: {
+          1113: {
             slidesPerView: 4,
             spaceBetween: 20,
           },

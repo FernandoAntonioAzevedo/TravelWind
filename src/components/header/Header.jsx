@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Logo from "../../assets/img/logo.png.png";
 import { links } from "../../Data";
 import ScrollLink from "../links/ScrollLink";
@@ -8,6 +9,8 @@ import { animateScroll } from "react-scroll";
 import "./header.css";
 
 const Header = () => {
+  const[showMenu, setShowMenu] = useState(false);
+
   const scrollTop = () => {
     animateScroll.scrollToTop();
   };
@@ -19,7 +22,7 @@ const Header = () => {
           <img src={Logo} alt="" className="nav-logo-img" />
         </Link>
 
-        <div className="nav-menu">
+        <div className={`${showMenu ? 'show-menu' : ''} nav-menu`}>
           <ul className="nav-list">
             {links.map((link, index) => {
               return(
@@ -34,7 +37,7 @@ const Header = () => {
               );
             })}
 
-            <li className="nav-item" >
+            <li className="nav-item">
                   <ScrollLink 
                     to="booking" 
                     name="Agendar agora"
@@ -43,10 +46,13 @@ const Header = () => {
                   >
                     <RiTelegram2Line className="button-icon" />
                   </ScrollLink>
-                </li>
+            </li>
           </ul>
 
-          <RiCloseFill className="nav-close" />
+          <RiCloseFill 
+            className="nav-close"
+            onClick={() => setShowMenu(!showMenu)}  
+          />
         </div>
 
         <div className="nav-buttons">
@@ -59,7 +65,10 @@ const Header = () => {
             <RiTelegram2Line className="button-icon" />
           </ScrollLink>
 
-          <RiMenuFill className="nav-toggle" />
+          <RiMenuFill 
+            className="nav-toggle" 
+            onClick={() => setShowMenu(!showMenu)} 
+          />
         </div>
       </nav>
     </header>

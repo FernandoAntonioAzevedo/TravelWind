@@ -35,7 +35,7 @@
     }
 
     .nav-toggle,
-    .nav-close
+    .nav-close,
     .nav-link-button {
         display: inline-flex;
     }
@@ -47,13 +47,18 @@
     .nav-menu {
         position: fixed;
         top: 0;
-        right: 0;
+        right: -100%;
         background-color: hsla(var(--hue), 0%, 100%, 0.4);
         backdrop-filter: blur(16px);
         border-left: 2px solid var(--border-color);
         width: 50%;
         height: 100%;
         padding: 5rem 0 0 3rem;
+        transition: right 0.3s;
+    }
+
+    .show-menu {
+        right: 0;
     }
 
     .nav-list {
@@ -70,11 +75,141 @@
         top: 1rem;
         right: 1.5rem;
     }
+
+    .home-container,
+    .booking-form,
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+
+    .home-data,
+    .section-header,
+    .about-content {
+        text-align: center;
+    }
+
+    .home-title {
+        max-width: 400px;
+    }
+
+    .home-description {
+        max-width: 600px;
+    }
+
+    .home-title,
+    .home-description,
+    .section-header {
+        margin-inline: auto;
+    }
+
+    .home-img {
+        display: none;
+    }
+
+    .booking-form {
+        row-gap: 1rem;
+        padding: 1rem;
+        background-color: transparent;
+    }
+
+    .booking-item {
+        background-color: var(--body-color);
+    }
+
+    .booking-to {
+        color: var(--white-color);
+    }
+
+    .booking-to,
+    .booking-button {
+        justify-self: center;
+    }
+
+    .categories,
+    .tours {
+        position: relative;
+        padding-bottom: 4.75rem;
+    }
+
+    .tours {
+        padding-bottom: 11rem;
+    }
+
+    .swiper-btns {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .tours .swiper-btns {
+        bottom: 6.25rem;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);        
+    }
 }
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        width: 80%;
+    }
+
+    .booking {
+        padding-block: 3rem;
+    }
+
+    .swiper {
+        max-width: 350px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-logo-img,
+    .footer-description {
+        margin-inline: auto;
+    }
+
+    .footer-description,
+    .footer-info {
+        max-width: 400px;
+    }
+
+    .footer-item,
+    .footer-socials,
+    .footer-gallery {
+        justify-content: center;
+    }
+
+    .footer-title::before,
+    .footer-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+}
 
 /* For small devices */
-@media screen and (max-width: 576px) {}
+@media screen and (max-width: 576px) {
+    .container {
+        padding-inline: 1rem;
+    }
 
-@media screen and (max-width: 460px) {}
+    .about-data {
+        flex-direction: column;
+    }
+
+    .about-no {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .booking-form {
+        padding: 0;
+    }
+}
